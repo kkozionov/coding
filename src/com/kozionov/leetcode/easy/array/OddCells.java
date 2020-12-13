@@ -72,10 +72,9 @@ public class OddCells {
             int cnt = 0;
             int [] rows = new int [n];
             int [] cols = new int [m];
-            for (int i = 0; i < indices.length; i++) {
-                rows[indices[i][0]]++;
-                cols[indices[i][1]]++;
-
+            for (int[] index : indices) {
+                rows[index[0]]++;
+                cols[index[1]]++;
             }
 
             for (int i = 0; i < n; i++) {
